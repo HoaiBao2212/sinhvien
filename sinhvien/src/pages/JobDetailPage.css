@@ -1,0 +1,15 @@
+.job-detail-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+.header-container {
+  position: relative;
+ 
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  
+}

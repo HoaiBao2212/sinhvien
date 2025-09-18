@@ -1,0 +1,39 @@
+
+
+.job-detail-container {
+  min-height: 70vh;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f7f4f4;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.job-image img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.job-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.apply-btn {
+  align-self: flex-end;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #bbb;
+}

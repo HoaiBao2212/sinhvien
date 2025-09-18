@@ -1,0 +1,30 @@
+/* Make SearchBar wider */
+.Searchbar {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+
+
+.footer {
+  position: relative;
+  bottom: 0;
+  
+}
+.workingpage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-workingpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  margin: 20px 0 10px 0 ;
+  
+  flex: 1;
+}
+
+

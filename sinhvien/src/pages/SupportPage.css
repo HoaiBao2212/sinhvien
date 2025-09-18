@@ -1,0 +1,10 @@
+.support-page {
+  min-height: 100vh;
+  background: #f7f7fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.support-page > .footer {
+  margin-top: auto;
+}

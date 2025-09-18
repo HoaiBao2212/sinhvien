@@ -1,0 +1,31 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 100vh;
+  gap: 15px;
+  flex: 4;
+  background: #e6eaef;
+  padding: 20px;
+}
+
+.card {
+  background: #d9dee3;
+  text-align: center;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card p {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.card span {
+  font-size: 12px;
+  color: #333;
+}
