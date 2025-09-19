@@ -5,7 +5,7 @@ import { fetchJobs } from "../api/jobApi";
 
 
 export default function JobSection() {
-  const [jobs, setJobs] = useState([]);
+
   const navigate = useNavigate();
 
     const [groupedJobs, setGroupedJobs] = useState({});
@@ -20,6 +20,7 @@ export default function JobSection() {
         setGroupedJobs(groups);
       });
     }, []);
+    
   return (
     <section className="job-section">
       {[1,2,3].map(id => (

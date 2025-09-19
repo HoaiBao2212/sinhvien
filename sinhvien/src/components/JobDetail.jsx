@@ -12,7 +12,7 @@ export default function JobDetail() {
   useEffect(() => {
     fetchJobDetail(Number(id)).then(data => setJob(data));
   }, [id]);
-  
+  //thông báo khi không tìm thấy trang
   if (job === undefined) return <div>Không tìm thấy công việc!</div>;
   if (job === null) return <div>Đang tải...</div>;
   
