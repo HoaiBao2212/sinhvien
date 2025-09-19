@@ -11,7 +11,6 @@ export default function CardGrid() {
     fetchJobs().then(data => setJobs(data));
   },[]);
 
-  // chuyển trang
   const navigate = useNavigate();
   return (
     <div className="card-grid">
@@ -19,7 +18,6 @@ export default function CardGrid() {
         <div
           key={item.id}
           className="card"
-          style={{ cursor: "pointer" }}
           onClick={() => navigate(`/job/${item.id}`)}
         >
           <img src={item.imgcompany} alt="company" />

@@ -5,7 +5,6 @@ export default function CreateCV({ onSubmit }) {
     
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Xử lý lưu dữ liệu tại đây nếu muốn
     alert("CV đã được tạo!");
     if (onSubmit) {
       onSubmit(e);

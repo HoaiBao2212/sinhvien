@@ -6,6 +6,7 @@ import quanan from '../assets/company/quan-an.jpg';
 import ruachen from '../assets/title/rua-chen.png';
 import cuahang from '../assets/company/cua-hang.jpg';
 import banhang from '../assets/title/ban-hang.jpg';
+//Data Job
 const jobs = [
   {
     id: 1,
