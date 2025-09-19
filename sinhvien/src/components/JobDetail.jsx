@@ -12,7 +12,7 @@ export default function JobDetail() {
   useEffect(() => {
     fetchJobDetail(Number(id)).then(data => setJob(data));
   }, [id]);
-
+  
   if (job === undefined) return <div>Không tìm thấy công việc!</div>;
   if (job === null) return <div>Đang tải...</div>;
   
@@ -23,12 +23,10 @@ export default function JobDetail() {
   return (
     <div className="job-detail">
       <div className="job-detail-container">
-        {/* Ảnh công việc */}
         <div className="job-image">
           <img src={job.img } alt="logo" />
         </div>
 
-        {/* Thông tin chi tiết */}
         <div className="job-info">
           <p><strong>Nhà tuyển dụng:</strong> {job.company}</p>
           <p><strong>Địa điểm:</strong> {job.location}</p>
