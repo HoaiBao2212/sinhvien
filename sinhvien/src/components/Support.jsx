@@ -8,7 +8,7 @@ export default function Support() {
       <div className="support-info">
         <p>Nếu bạn cần hỗ trợ hoặc có thắc mắc về hệ thống, vui lòng liên hệ:</p>
         <ul>
-          <li>Email: <a href="">support@vieclamthem.com</a></li>
+          <li>Email: <a href="">vieclamthem@gmail.com</a></li>
           <li>Hotline: <a href="">0123 456 789</a></li>
           <li>Facebook: <a href="" target="_blank" rel="noopener noreferrer">facebook.com/vieclamthem</a></li>
         </ul>
