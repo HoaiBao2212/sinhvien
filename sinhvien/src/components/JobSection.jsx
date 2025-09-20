@@ -23,9 +23,10 @@ export default function JobSection() {
     
   return (
     <section className="job-section">
+      
       {[1,2].map(id => (
         groupedJobs[id] && groupedJobs[id].length > 0 && (
-          <div key={id} style={{marginBottom:32}}>
+          <div key={id}  className="job-section-group">
             <div className="employer-info">
               <p>
                 <strong>Nhà tuyển dụng: {groupedJobs[id][0].company}</strong> <br />

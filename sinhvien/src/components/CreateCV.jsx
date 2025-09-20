@@ -1,9 +1,9 @@
-import React from "react";
+import React,{useRef} from "react";
 import "./CreateCV.css";
 import { useNavigate } from "react-router-dom";
 export default function CreateCV({ onSubmit }) {
   const navigate =useNavigate(); 
-  
+  const avatarRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -12,6 +12,7 @@ export default function CreateCV({ onSubmit }) {
     const phone = form.phone.value.trim();
     const experience = form.experience.value.trim();
     const skills = form.skills.value.trim();
+    const avatar = avatarRef.current?.files[0];
 
     if (!fullname || !email || !phone || !experience || !skills) {
       alert("Vui lòng điền đầy đủ thông tin!");
@@ -29,6 +30,10 @@ export default function CreateCV({ onSubmit }) {
     <main className="cv-main">
       <h2>Tạo CV của bạn</h2>
       <form className="cv-form" onSubmit={handleSubmit}>
+        <label>
+          Ảnh đại diện:
+          <input type="file" name="avatar" accept="image/*" ref={avatarRef} />
+        </label>
         <label>
           Họ và tên:
           <input type="text" name="fullname" />

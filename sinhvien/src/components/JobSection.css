@@ -1,14 +1,27 @@
 .job-section {
-  background: #e0e0e0;
-  margin: 20px;
-  padding: 10px;
+  background: #ffffff;
+  margin: 0;
+  padding: 10px 0;
+  width: 90vw;
+  max-width: 90vw;
+  box-sizing: border-box;
+}
+.job-section-group {
+  margin-bottom: 32px;
+  background: #f9ece7;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding-bottom: 16px;
 }
 
+.job-section-group + .job-section-group {
+  margin-top: 32px;
+}
 .employer-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 5px 5px 5px 20px;
 }
 
 .rating {
@@ -21,7 +34,7 @@
   gap: 16px;
   margin-top: 10px;
   padding-bottom: 8px;
-  max-width: 1050px;
+  max-width: 90vm;
   width: 100%;
   scroll-behavior: smooth;
   background-color: #f5f8fb;

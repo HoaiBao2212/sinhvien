@@ -1,3 +1,40 @@
+
+.cv-main {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px;
+  flex: 1;
+}
+.cv-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.cv-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.cv-info-details {
+  flex: 1;
+}
+.cv-info p {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.cv-info strong {
+  color: #357ae8;
+}
+
 .floating-create-cv {
   position: fixed;
   right: 300px;
@@ -17,20 +54,4 @@
 .floating-create-cv:hover {
   background: #ff9900;
   color: #fff;
-}
-.cv-main {
-  max-width: 500px;
-  margin: 40px auto;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 32px;
-  flex: 1;
-}
-.cv-info p {
-  margin-bottom: 12px;
-  font-size: 16px;
-}
-.cv-info strong {
-  color: #357ae8;
 }
