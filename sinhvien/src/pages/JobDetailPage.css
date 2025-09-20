@@ -5,7 +5,9 @@
   
 }
 .header-container {
-  position: relative;
+  position: sticky;
+  z-index: 100;
+  top: 0;
  
 }
 .footer {

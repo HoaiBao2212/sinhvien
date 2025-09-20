@@ -8,7 +8,7 @@ export default function CV({ }) {
     email: "baobao@gmail.com",
     phone: "0123456789",
     experience: "1 năm làm phục vụ quán cafe, 6 tháng bán hàng tại cửa hàng tiện lợi.",
-    skills: "Chăm chỉ, sử dụng máy tính cơ bản."
+    skills: "Sử dụng máy tính cơ bản."
     };
 
     const navigate = useNavigate();
@@ -22,7 +22,10 @@ export default function CV({ }) {
         <p><strong>Kinh nghiệm:</strong> {cvData.experience}</p>
         <p><strong>Kỹ năng:</strong> {cvData.skills}</p>
       </div>
-      <button className="edit-cv-btn" onClick={() => navigate("/create-cv") }>Tạo mới CV</button>
+    
+      <button className="floating-create-cv" onClick={() => navigate("/create-cv") }>
+        Tạo mới CV
+      </button>
     </main>
   );
 }

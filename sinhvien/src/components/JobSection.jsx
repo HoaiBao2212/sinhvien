@@ -14,7 +14,7 @@ export default function JobSection() {
       fetchJobs().then(data => {
         // Nhóm job theo idcompany
         const groups = {};
-        [1,2,3].forEach(id => {
+        [1,2].forEach(id => {
           groups[id] = data.filter(job => job.idcompany === id);
         });
         setGroupedJobs(groups);
@@ -23,7 +23,7 @@ export default function JobSection() {
     
   return (
     <section className="job-section">
-      {[1,2,3].map(id => (
+      {[1,2].map(id => (
         groupedJobs[id] && groupedJobs[id].length > 0 && (
           <div key={id} style={{marginBottom:32}}>
             <div className="employer-info">
@@ -42,7 +42,7 @@ export default function JobSection() {
                     <p>{job.date}</p>
                     <p>{job.time}</p>
                   </div>
-                  <button className="apply-btn" onClick={()=> navigate(`/job/${job.id}`)}>Ứng tuyển ngay ➜</button>
+                  <button className="apply-btn" onClick={()=> navigate(`/job/${job.id}`)}>Xem thêm ➜</button>
                 </div>
               ))}
             </div>

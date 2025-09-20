@@ -15,9 +15,9 @@ export default function AppRouter() {
       <Route path="/work" element={<Workingpage />} />
       {/* /:id */}
       <Route path="/job/:id" element={<JobDetailPage />} />
-  <Route path="/create-cv" element={<CreateCVPage />} />
-  <Route path="/my-cv" element={<MyCVPage />} />
-  <Route path="/support" element={<SupportPage />} />
+      <Route path="/create-cv" element={<CreateCVPage />} />
+      <Route path="/my-cv" element={<MyCVPage />} />
+      <Route path="/support" element={<SupportPage />} />
     </Routes>
     </BrowserRouter>
   );

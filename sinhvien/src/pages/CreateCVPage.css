@@ -1,5 +1,6 @@
 .create-cv-page {
   min-height: 100vh;
   background: #f7f7fa;
+  max-width: 100vw;
 }
 

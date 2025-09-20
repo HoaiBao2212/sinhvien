@@ -1,14 +1,28 @@
 import React from "react";
 import "./CreateCV.css";
-
+import { useNavigate } from "react-router-dom";
 export default function CreateCV({ onSubmit }) {
-    
+  const navigate =useNavigate(); 
+  
   const handleSubmit = (e) => {
     e.preventDefault();
+    const form = e.target;
+    const fullname = form.fullname.value.trim();
+    const email = form.email.value.trim();
+    const phone = form.phone.value.trim();
+    const experience = form.experience.value.trim();
+    const skills = form.skills.value.trim();
+
+    if (!fullname || !email || !phone || !experience || !skills) {
+      alert("Vui lòng điền đầy đủ thông tin!");
+      return;
+    }
+
     alert("CV đã được tạo!");
     if (onSubmit) {
       onSubmit(e);
     }
+    navigate("/my-cv");
   };
 
   return (
@@ -35,7 +49,7 @@ export default function CreateCV({ onSubmit }) {
           Kỹ năng:
           <textarea name="skills" rows={3} />
         </label>
-        <button type="submit">Tạo CV</button>
+  <button type="submit">Tạo CV</button>
       </form>
     </main>
   );

@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="header">
       
-      <a href="" onClick={()=> navigate("/")}><h1 className="logo" >Sinhvien+</h1></a>
+      <a  onClick={()=> navigate("/")}><h1 className="logo" >🎓 Sinhvien+</h1></a>
       
       <div className="dropdown">
         <button className="dropdown-btn" onClick={() => setOpen(!open)}>
@@ -22,10 +22,10 @@ export default function Header() {
             <p className="dropdown-component">Xin chào</p>
             <ul>
               
-              <li  onClick={()=> navigate("/work")}>💼 Việc làm</li>
+              <li  onClick={()=> navigate("/work")}>💼 Quản lý việc làm</li>
              
               
-              <li onClick={()=> navigate("/my-cv")}>📄 Tạo CV</li>
+              <li onClick={()=> navigate("/my-cv")}>📄 CV</li>
               <li onClick={()=> navigate("/support")}>🎧 Hỗ trợ</li>
               <li>⚙️ Cài đặt</li>
               <li>↩️ Đăng xuất</li>

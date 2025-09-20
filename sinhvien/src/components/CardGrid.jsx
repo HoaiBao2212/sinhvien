@@ -22,7 +22,12 @@ export default function CardGrid() {
         >
           <img src={item.imgcompany} alt="company" />
           <p>{item.title}</p>
-          <span>{item.location}</span>
+          <span>
+          {item.location}
+          <br />  
+          {item.date}
+          <br />
+          {item.time}</span>
         </div>
       ))}
     </div>
